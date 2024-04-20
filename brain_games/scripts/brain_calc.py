@@ -35,7 +35,6 @@ def main():
                 result = num1 + num2
                 if check_answer(ans, result):
                     sign += 1
-                    continue
                 else:
                     print(f"Let's try again, {name}")
                     break
@@ -45,7 +44,6 @@ def main():
                 result = num1 - num2
                 if check_answer(ans, result):
                     sign += 1
-                    continue
                 else:
                     print(f"Let's try again, {name}")
                     break
@@ -55,12 +53,12 @@ def main():
                 result = num1 * num3
                 if check_answer(ans, result):
                     sign += 1
-                    continue
                 else:
                     print(f"Let's try again, {name}")
                     break
             case 3:
                 print(f"Congratulations, {name}!")
+                break
 
 
 if __name__ == '__main__':

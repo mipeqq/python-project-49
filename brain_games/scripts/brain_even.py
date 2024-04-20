@@ -11,7 +11,6 @@ def check_even(number):
 
 
 def main():
-    print('Welcome to the Brain Games!')
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     countCorrect = 0
