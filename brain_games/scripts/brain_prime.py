@@ -3,13 +3,15 @@ import random
 import prompt
 
 
-def GCD(a, b):
-    if b > a:
-        a, b = b, a
+def is_prime(number):
+    if number <= 1:
+        return 'no'
 
-    while b != 0:
-        a, b = b, a % b
-    return a
+    for i in range(2, int(number ** 0.5) + 1):
+        if number % i == 0:
+            return 'no'
+
+    return 'yes'
 
 
 def check_answer(answer, result):
@@ -24,16 +26,12 @@ def check_answer(answer, result):
 def main():
     countCorrect = 0
     name = welcome_user()
-    print('Find the greatest common divisor of given numbers.')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     while countCorrect <= 3:
-        num1 = random.randint(1, 101)
-        num2 = random.randint(1, 101)
-        while GCD(num1, num2) == 1:  # чтобы убрать частый ответ 1
-            num1 = random.randint(1, 101)
-            num2 = random.randint(1, 101)
-        print(f"Question: {num1} {num2}")
-        ans = prompt.string('Answer: ')
-        result = str(GCD(num1, num2))
+        num = random.randint(1, 51)
+        print(f'Question: {num}')
+        result = is_prime(num)
+        ans = prompt.string('Your answer: ')
         if check_answer(ans, result):
             countCorrect += 1
         else:
@@ -41,7 +39,7 @@ def main():
             break
 
         if countCorrect == 3:
-            print(f"Congratulations, {name}!")
+            print(f'Congratulations, {name}!')
             break
 
 
