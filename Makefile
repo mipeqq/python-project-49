@@ -4,6 +4,9 @@ install:
 brain-games:
 	poetry run brain-games
 
+brain-even:
+	poetry run brain-even
+
 build:
 	poetry build
 
@@ -18,3 +21,4 @@ package-reinstall:
 
 lint:
 	poetry run flake8 brain_games
+
