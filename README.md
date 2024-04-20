@@ -8,3 +8,5 @@ Asciinema для brain-calc: https://asciinema.org/a/5WfMXnmrrm0sFYkJe2NrhCSYf
 Asciinema для brain-gcd: https://asciinema.org/a/iIHjbQz7EJwgng1iJjWzJPNih
 
 Asciinema для brain-progression: https://asciinema.org/a/WVHaT3klnE4dwKmvdDKc53FIc
+
+Asciinema для brain-prime: https://asciinema.org/a/hhTr9UdLjYSUNBmYX7zgQHVx7
