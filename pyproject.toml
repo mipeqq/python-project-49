@@ -24,7 +24,4 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
-<<<<<<< HEAD
-=======
 brain-calc = "brain_games.scripts.brain_calc:main"
->>>>>>> 46f706c (Обновлены исключения; Добавлена игра brain-even; Пересобран пакет; Создана аскинема; создан скрипт brain-even.py)
