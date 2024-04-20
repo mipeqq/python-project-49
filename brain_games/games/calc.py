@@ -23,7 +23,7 @@ def game_calc():
                 if check_answer(ans, result):
                     countCorrect += 1
                 else:
-                    print(f"Let's try again, {name}")
+                    print(f"Let's try again, {name}!")
                     break
             case 1:
                 print(f'Question: {num1} - {num2}')
@@ -32,7 +32,7 @@ def game_calc():
                 if check_answer(ans, result):
                     countCorrect += 1
                 else:
-                    print(f"Let's try again, {name}")
+                    print(f"Let's try again, {name}!")
                     break
             case 2:
                 print(f'Question: {num1} * {num3}')

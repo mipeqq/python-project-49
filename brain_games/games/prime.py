@@ -27,7 +27,7 @@ def game_prime():
         if check_answer(ans, result):
             countCorrect += 1
         else:
-            print(f"Let's try again, {name}")
+            print(f"Let's try again, {name}!")
             break
 
         if countCorrect == 3:
