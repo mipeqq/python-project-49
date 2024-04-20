@@ -1,4 +1,5 @@
-import random, prompt
+import random
+import prompt
 from brain_games.cli import welcome_user
 
 
@@ -8,6 +9,7 @@ def check_even(number):
     else:
         return False
 
+
 def main():
     print('Welcome to the Brain Games!')
     name = welcome_user()
@@ -16,15 +18,15 @@ def main():
     num = 0
 
     while countCorrect < 3:
-        num = random.randint(1,100)
+        num = random.randint(1, 100)
         even = check_even(num)
         print('Question: ', num)
         ans = prompt.string('Answer: ')
-        if ((even == True) and (ans == 'yes')) or ((even != True) and (ans == 'no')):
+        if ((even) and (ans == 'yes')) or ((not even) and (ans == 'no')):
             print('Correct!')
             countCorrect += 1
         else:
-            if (even == True):
+            if even:
                 print(f'"{ans}" is wrong answer ;(. Correct answer is "yes".')
                 print(f"Let's try again, {name}!")
                 break
@@ -35,6 +37,7 @@ def main():
 
     if countCorrect == 3:
         print(f"Congratulations, {name}!")
+
 
 if __name__ == '__main__':
     main()
