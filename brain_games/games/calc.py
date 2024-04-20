@@ -41,7 +41,7 @@ def game_calc():
                 if check_answer(ans, result):
                     countCorrect += 1
                 else:
-                    print(f"Let's try again, {name}")
+                    print(f"Let's try again, {name}!")
                     break
             case 3:
                 print(f"Congratulations, {name}!")
